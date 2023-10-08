@@ -8,9 +8,9 @@ import Footer from "../Footer";
 function Fetch() {
   const [data, setData] = useState([]);
 
-  useEffect(() => {
+   useEffect(() => {
     const fetchData = () => {
-      fetch("http://172.22.81.182:8080/rfid/getall")
+      fetch("https://7f36-2409-408d-4e93-e76f-b8fe-e731-f687-695e.ngrok-free.app/rfid/getall")
         .then((response) => response.json())
         .then((actualData) => {
           console.log(actualData);
